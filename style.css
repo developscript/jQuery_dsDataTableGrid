@@ -1,0 +1,126 @@
+/* !
+ *
+ * DevelopScript - DataTableGrid v0.6.5 (http://developscript.com)
+ *
+ * Licensed under the MIT license.
+ *
+ * @file            style.css
+ * @author          Rafael Pegorari
+ * @date            29/09/2015
+ *
+ */
+
+body {
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.title {
+    float: none;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.title p {
+    color: #565656;
+
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.produto {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.produto a {
+    text-decoration: none;
+}
+
+.hover {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.produto:hover .hover {
+    border-top: 2px solid #CFCFCF;
+    border-left: 2px solid #CFCFCF;
+    border-right: 2px solid #CFCFCF;
+}
+
+.img {
+    padding-top: 10px;
+    width: 180px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 180px;
+    max-height: 192px;
+    margin: 0 auto;
+}
+
+.desc, .price {
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+
+.price {
+    padding-bottom: 15px;
+}
+
+.desc h3 {
+    margin: 0px;
+    color: #333333;
+}
+
+.price h3 {
+    margin: 0px;
+    color: #C51919;
+}
+
+.link .btn-ver {
+    width: 100%;
+    border-radius: 0px;
+    padding: 8px 12px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #CFCFCF;
+    margin-bottom: 12px;
+}
+
+.total {
+    line-height: 75px;
+}
+
+.box_list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.not_found{
+    display:none;
+    text-align: center;
+    margin-top:25px;
+    margin-bottom:25px;
+}
