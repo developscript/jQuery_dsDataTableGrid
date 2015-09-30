@@ -20,7 +20,8 @@
 <head>
     <meta charset="UTF-8">
     <title>_dsDataTableGrid | Plug-in for jQuery</title>
-    <meta name="description" content="_dsDataTableGrid is a plugin for jQuery that works with AJAX requests. With some settings you build a dynamic grid, ideal for catalog products.">
+    <meta name="description"
+          content="_dsDataTableGrid is a plugin for jQuery that works with AJAX requests. With some settings you build a dynamic grid, ideal for catalog products.">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link href="lib/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -34,10 +35,19 @@
             <h1>_dsDataTableGrid
                 <small>Plug-in for jQuery</small>
             </h1>
-            <p> _dsDataTableGrid is a plugin for jQuery that works with AJAX requests. With some settings you build a dynamic grid, ideal for catalog products.</p>
+            <p> _dsDataTableGrid is a plugin for jQuery that works with AJAX requests. With some settings you build a
+                dynamic grid, ideal for catalog products.</p>
+
+            <div class="text-center">
+                <a href="https://github.com/developscript/jQuery_dsDataTableGrid" class="btn btn-success">View on
+                    GitHub</a>
+                <a href="https://github.com/developscript/jQuery_dsDataTableGrid/zipball/master"
+                   class="btn btn-primary">Download .zip</a>
+                <a href="https://github.com/developscript/jQuery_dsDataTableGrid/tarball/master"
+                   class="btn btn-primary">Download .tar.gz</a>
+            </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
 
@@ -167,9 +177,9 @@
 <script>
     (function ($) {
         /*
-            ====== Function contruct ======
-            Parameter "data" is returned from the back-end is a reference of the field array.
-        */
+         ====== Function contruct ======
+         Parameter "data" is returned from the back-end is a reference of the field array.
+         */
         var contruct_grid = function (data) {
             $('#not_found').hide();
             $('#grid').show();
@@ -182,22 +192,22 @@
             $.each(data, function (index, value) {
                 html.push('<div class="col-md-4 col-sm-6 col-xs-12 produto">');
 
-                    html.push('<a href="javascript:;">');
-                        html.push('<div class="hover">');
-                            html.push('<div class="img">');
-                                html.push('<img src="http://php.developscript.com/jquery_dsdatatablegrid/img/' + value['id'] + '.png" />');
-                            html.push('</div>');
-                            html.push('<div class="desc">');
-                                html.push('<h3>' + value['name'] + '</h3>');
-                            html.push('</div>');
-                            html.push('<div class="price">');
-                                html.push('<h3>$ ' + value['price'] + '</h3>');
-                            html.push('</div>');
-                        html.push('</div>');
-                        html.push('<div class="link">');
-                            html.push('<span class="btn btn-primary btn-ver">Ver</span>');
-                        html.push('</div>');
-                    html.push('</a>');
+                html.push('<a href="javascript:;">');
+                html.push('<div class="hover">');
+                html.push('<div class="img">');
+                html.push('<img src="http://php.developscript.com/jquery_dsdatatablegrid/img/' + value['id'] + '.png" />');
+                html.push('</div>');
+                html.push('<div class="desc">');
+                html.push('<h3>' + value['name'] + '</h3>');
+                html.push('</div>');
+                html.push('<div class="price">');
+                html.push('<h3>$ ' + value['price'] + '</h3>');
+                html.push('</div>');
+                html.push('</div>');
+                html.push('<div class="link">');
+                html.push('<span class="btn btn-primary btn-ver">Ver</span>');
+                html.push('</div>');
+                html.push('</a>');
 
                 html.push('</div>')
             });
@@ -208,8 +218,8 @@
         };
 
         /*
-            ====== Function not found records ======
-            Parameter "data" is returned from the back-end makes reference to every request.
+         ====== Function not found records ======
+         Parameter "data" is returned from the back-end makes reference to every request.
          */
         var not_found = function (data) {
             $('#not_found').show();
@@ -219,89 +229,89 @@
         $(function () {
 
             /*
-                ====== Default setting ======
-                labelTotal: {
-                    active: true,
-                    showing: 'Showing',
-                    to: 'to',
-                    of: 'of',
-                    entries: 'entries',
-                    loading: 'Loading...',
-                    filter: 'Filter',
-                    values_in_total: 'values ​​in total',
-                    records_not_found: 'Records not found.'
-                },
-                search: {
-                    active: true,
-                    autosearch: true
-                },
-                recordsPage: {
-                    active: true
-                },
-                pagination: {
-                    active: true
-                },
-                order: {
-                    active: true
-                },
-                _dsEmtName: {
-                    records: '_dsRecords',
-                    pagination: '_dsPagination',
-                    search: '_dsSearch',
-                    totais: '_dsTotais',
-                    order: '_dsOrder'
-                }
+             ====== Default setting ======
+             labelTotal: {
+             active: true,
+             showing: 'Showing',
+             to: 'to',
+             of: 'of',
+             entries: 'entries',
+             loading: 'Loading...',
+             filter: 'Filter',
+             values_in_total: 'values ​​in total',
+             records_not_found: 'Records not found.'
+             },
+             search: {
+             active: true,
+             autosearch: true
+             },
+             recordsPage: {
+             active: true
+             },
+             pagination: {
+             active: true
+             },
+             order: {
+             active: true
+             },
+             _dsEmtName: {
+             records: '_dsRecords',
+             pagination: '_dsPagination',
+             search: '_dsSearch',
+             totais: '_dsTotais',
+             order: '_dsOrder'
+             }
 
 
-                ====== All settings ======
-                $('#list_grid').dsDataTable({
-                    labelTotal: {
-                        active: true || false,
-                        showing: '*********',
-                        to: '***',
-                        of: '***',
-                        entries: '*********',
-                        loading: '*********',
-                        filter: '*********',
-                        values_in_total: '*********',
-                        records_not_found: '*********'
-                    },
-                    search: {
-                        active: true || false,
-                        autosearch: true || false
-                    },
-                    recordsPage: {
-                        active: true || false
-                    },
-                    pagination: {
-                        active: true || false
-                    },
-                    order: {
-                        active: true || false
-                    },
-                    _dsEmtName: {
-                        records: '*********',
-                        pagination: '*********',
-                        search: '*********',
-                        totais: '*********',
-                        order: '*********'
-                    },
-                    // ==== required ====
-                    ajax: {
-                        url: '*********',
-                        type: 'POST||GET|| ...',
-                        addData: {yourData: 'yourValue'} // ==== optional ====
-                    },
-                    // ==== required ====
-                    constructor: {
-                        found: contruct_grid,
-                        not_found: not_found // ==== optional ====
-                    }
-                });
-            */
+             ====== All settings ======
+             $('#list_grid').dsDataTable({
+             labelTotal: {
+             active: true || false,
+             showing: '*********',
+             to: '***',
+             of: '***',
+             entries: '*********',
+             loading: '*********',
+             filter: '*********',
+             values_in_total: '*********',
+             records_not_found: '*********'
+             },
+             search: {
+             active: true || false,
+             autosearch: true || false
+             },
+             recordsPage: {
+             active: true || false
+             },
+             pagination: {
+             active: true || false
+             },
+             order: {
+             active: true || false
+             },
+             _dsEmtName: {
+             records: '*********',
+             pagination: '*********',
+             search: '*********',
+             totais: '*********',
+             order: '*********'
+             },
+             // ==== required ====
+             ajax: {
+             url: '*********',
+             type: 'POST||GET|| ...',
+             addData: {yourData: 'yourValue'} // ==== optional ====
+             },
+             // ==== required ====
+             constructor: {
+             found: contruct_grid,
+             not_found: not_found // ==== optional ====
+             }
+             });
+             */
             /*
-                ====== Call the plugin ======
-            */
+             ====== Call the plugin ======
+             */
             $('#list_grid').dsDataTable({
                 ajax: {
                     url: 'http://php.developscript.com/jquery_dsdatatablegrid/ajaxPDO.php',
