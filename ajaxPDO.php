@@ -2,7 +2,7 @@
 
 /* !
  * 
- * DevelopScript - DataTableGrid v0.6.5 (http://developscript.com)
+ * DevelopScript - DataTableGrid v0.7.0 (http://developscript.com)
  * 
  * Licensed under the MIT license.
  * 
