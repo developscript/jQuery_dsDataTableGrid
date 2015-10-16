@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>jQuery_dsDataTableGrid by developscript</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,216 +8,155 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-</head>
-<body>
-<section class="page-header">
-    <h1 class="project-name">jQuery_dsDataTableGrid</h1>
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">jQuery_dsDataTableGrid</h1>
+      <h2 class="project-tagline">_dsDataTableGrid plug-in for jQuery - Create dynamic grid, ideal for catalog products.</h2>
+      <a href="https://github.com/developscript/jQuery_dsDataTableGrid" class="btn">View on GitHub</a>
+      <a href="https://github.com/developscript/jQuery_dsDataTableGrid/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/developscript/jQuery_dsDataTableGrid/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <h2 class="project-tagline">_dsDataTableGrid plug-in for jQuery - Create dynamic grid, ideal for catalog
-        products.</h2>
-    <a href="https://github.com/developscript/jQuery_dsDataTableGrid" class="btn">View on GitHub</a>
-    <a href="https://github.com/developscript/jQuery_dsDataTableGrid/zipball/master" class="btn">Download .zip</a>
-    <a href="https://github.com/developscript/jQuery_dsDataTableGrid/tarball/master" class="btn">Download .tar.gz</a>
-</section>
+    <section class="main-content">
+      <h1>
+<a id="jquery_dsdatatablegrid" class="anchor" href="#jquery_dsdatatablegrid" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery_dsDataTableGrid</h1>
 
-<section class="main-content">
-    <h1>
-        <a id="jquery_dsdatatablegrid" class="anchor" href="#jquery_dsdatatablegrid" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>jQuery_dsDataTableGrid</h1>
+<p>_dsDataTableGrid is a plugin for <a href="//jquery.com">jQuery</a> that works with AJAX requests. With some setting you build a dynamic grid, ideal for catalog products.</p>
 
-    <p>_dsDataTableGrid is a plugin for <a href="//jquery.com">jQuery</a> that works with AJAX requests. With some
-        settings you build a dynamic grid, ideal for catalog products.</p>
+<h3>
+<a id="exemple" class="anchor" href="#exemple" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://developscript.github.io/jQuery_dsDataTableGrid/">Exemple...</a>
+</h3>
 
-    <h1>Click <a href="exemple.html" target="_blank">HERE</a> for a live example.</h1>
+<h2>
+<a id="having-support" class="anchor" href="#having-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Having support</h2>
 
-    <h2>
-        <a id="having-support" class="anchor" href="#having-support" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Having support</h2>
+<ul>
+<li>
+<p>Search, configuration:</p>
 
-    <ul>
-        <li>
-            <p>Search, configuration:</p>
+<ul>
+<li>Enable or disable</li>
+<li>Autosearch enable or disable</li>
+</ul>
+</li>
+<li>
+<p>Records per page, Configuration:</p>
 
-            <ul>
-                <li>Enable or disable</li>
-                <li>Autosearch enable or disable</li>
-            </ul>
-        </li>
-        <li>
-            <p>Records per page, Configuration:</p>
+<ul>
+<li>Enable or disable</li>
+</ul>
+</li>
+<li>
+<p>Pagination, Configuration:</p>
 
-            <ul>
-                <li>Enable or disable</li>
-            </ul>
-        </li>
-        <li>
-            <p>Pagination, Configuration:</p>
+<ul>
+<li>Enable or disable</li>
+</ul>
+</li>
+<li>
+<p>Parameters url, Configuration:</p>
 
-            <ul>
-                <li>Enable or disable</li>
-            </ul>
-        </li>
-        <li>
-            <p>Ordering, Configuration:</p>
+<ul>
+<li>Enable or disable</li>
+</ul>
+</li>
+<li>
+<p>Ordering, Configuration:</p>
 
-            <ul>
-                <li>Enable or disable</li>
-            </ul>
-        </li>
-        <li>
-            <p>Totals label, Configuration:</p>
+<ul>
+<li>Enable or disable</li>
+</ul>
+</li>
+<li>
+<p>Totals label, Configuration:</p>
 
-            <ul>
-                <li>Enable or disable</li>
-                <li>Display text</li>
-                <li>Loading text</li>
-                <li>Filter text</li>
-            </ul>
-        </li>
-    </ul>
+<ul>
+<li>Enable or disable</li>
+<li>Display text</li>
+<li>Loading text</li>
+<li>Filter text</li>
+</ul>
+</li>
+</ul>
 
-    <h2>
-        <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Installation</h2>
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-    <p>The installation is to add javascripts, jQuery and dsDatatableGrid.
-        The plugin was developed based on version of jQuery-2.1.4.</p>
+<p>The installation is to add javascripts, jQuery and dsDatatableGrid.
+The plugin was developed based on version of jQuery-2.1.4.</p>
 
-    <p><strong>Scripts JavaScript</strong></p>
+<p><strong>Scripts JavaScript</strong></p>
 
-    <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span
-            class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>lib/jquery-2.1.4.js<span
-            class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span
-            class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
-&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dsDataTableGrid.js<span
-                class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre>
-    </div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>lib/jquery-2.1.4.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dsDataTableGrid.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
-    <h2>
-        <a id="simple-application" class="anchor" href="#simple-application" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Simple application</h2>
+<h2>
+<a id="simple-application" class="anchor" href="#simple-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple application</h2>
 
-    <p><strong>Style CSS</strong></p>
+<p><strong>Style CSS</strong></p>
 
-    <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span
-            class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">'</span>https://fonts.googleapis.com/css?family=Roboto:400,700,500<span
-            class="pl-pds">'</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span
-            class="pl-pds">'</span>stylesheet<span class="pl-pds">'</span></span> <span class="pl-e">type</span>=<span
-            class="pl-s"><span class="pl-pds">'</span>text/css<span class="pl-pds">'</span></span>&gt;
-&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>lib/bootstrap-3.3.5/css/bootstrap.css<span
-                class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;
-&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>style.css<span
-                class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;</pre>
-    </div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">'</span>https://fonts.googleapis.com/css?family=Roboto:400,700,500<span class="pl-pds">'</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">'</span>stylesheet<span class="pl-pds">'</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text/css<span class="pl-pds">'</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>lib/bootstrap-3.3.5/css/bootstrap.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>style.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;</pre></div>
 
-    <p><strong>HTML</strong></p>
+<p><strong>HTML</strong></p>
 
-    <div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- id that is passed to the plugin, id="list_grid" --&gt;</span>
-&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>list_grid<span
-                class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span
-                class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group<span
-                class="pl-pds">"</span></span>&gt;
-                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Search&lt;/<span
-                class="pl-ent">label</span>&gt;
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- id that is passed to the plugin, id="list_grid" --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>list_grid<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Search&lt;/<span class="pl-ent">label</span>&gt;
 
                 <span class="pl-c">&lt;!-- input search, name="_dsSearch" --&gt;</span>
-                &lt;<span class="pl-ent">input</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsSearch<span
-                class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">input</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsSearch<span class="pl-pds">"</span></span>&gt;
             &lt;/<span class="pl-ent">div</span>&gt;
 
         &lt;/<span class="pl-ent">div</span>&gt;
     &lt;/<span class="pl-ent">div</span>&gt;
 
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row border-bottom<span
-                class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row border-bottom<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
 
             <span class="pl-c">&lt;!-- It shows the total records, name="_dsTotais" --&gt;</span>
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">name</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>_dsTotais<span class="pl-pds">"</span></span> <span
-                class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>total<span
-                class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsTotais<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>total<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-right<span
-                class="pl-pds">"</span></span>&gt;
-                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Sort by&lt;/<span
-                class="pl-ent">label</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-right<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Sort by&lt;/<span class="pl-ent">label</span>&gt;
 
                 <span class="pl-c">&lt;!-- select order, name="_dsOrder" --&gt;</span>
-                &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsOrder<span
-                class="pl-pds">"</span></span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;Select&lt;/<span
-                class="pl-ent">option</span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>ASC<span class="pl-pds">"</span></span>&gt;a-z&lt;/<span
-                class="pl-ent">option</span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>DESC<span class="pl-pds">"</span></span>&gt;z-a&lt;/<span
-                class="pl-ent">option</span>&gt;
+                &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsOrder<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;Select&lt;/<span class="pl-ent">option</span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>ASC<span class="pl-pds">"</span></span>&gt;a-z&lt;/<span class="pl-ent">option</span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>DESC<span class="pl-pds">"</span></span>&gt;z-a&lt;/<span class="pl-ent">option</span>&gt;
                 &lt;/<span class="pl-ent">select</span>&gt;
             &lt;/<span class="pl-ent">div</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
     &lt;/<span class="pl-ent">div</span>&gt;
 
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span
-                class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span
-                class="pl-pds">"</span></span>&gt;
-                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-4<span class="pl-pds">"</span></span>&gt;
-                    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-group pull-left<span class="pl-pds">"</span></span>&gt;
-                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Display&lt;/<span
-                class="pl-ent">label</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-4<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-left<span class="pl-pds">"</span></span>&gt;
+                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Display&lt;/<span class="pl-ent">label</span>&gt;
 
                         <span class="pl-c">&lt;!-- select records per page, name="_dsRecords" --&gt;</span>
-                        &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsRecords<span class="pl-pds">"</span></span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>9<span class="pl-pds">"</span></span>&gt;9&lt;/<span
-                class="pl-ent">option</span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>18<span class="pl-pds">"</span></span>&gt;18&lt;/<span
-                class="pl-ent">option</span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>27<span class="pl-pds">"</span></span>&gt;27&lt;/<span
-                class="pl-ent">option</span>&gt;
+                        &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsRecords<span class="pl-pds">"</span></span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>9<span class="pl-pds">"</span></span>&gt;9&lt;/<span class="pl-ent">option</span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>18<span class="pl-pds">"</span></span>&gt;18&lt;/<span class="pl-ent">option</span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>27<span class="pl-pds">"</span></span>&gt;27&lt;/<span class="pl-ent">option</span>&gt;
                         &lt;/<span class="pl-ent">select</span>&gt;
-                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;per page&lt;/<span
-                class="pl-ent">label</span>&gt;
+                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;per page&lt;/<span class="pl-ent">label</span>&gt;
                     &lt;/<span class="pl-ent">div</span>&gt;
                 &lt;/<span class="pl-ent">div</span>&gt;
-                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-8<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-8<span class="pl-pds">"</span></span>&gt;
                     &lt;<span class="pl-ent">nav</span>&gt;
 
                         <span class="pl-c">&lt;!-- ul pagination, name="_dsPagination" --&gt;</span>
-                        &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>pagination pull-right<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsPagination<span
-                class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">ul</span>&gt;
+                        &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pagination pull-right<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsPagination<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">ul</span>&gt;
                     &lt;/<span class="pl-ent">nav</span>&gt;
                 &lt;/<span class="pl-ent">div</span>&gt;
             &lt;/<span class="pl-ent">div</span>&gt;
@@ -225,191 +164,109 @@
     &lt;/<span class="pl-ent">div</span>&gt;
 
     <span class="pl-c">&lt;!-- list box that is handled in the constructor function, id="grid" --&gt;</span>
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>grid<span
-                class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>box_list<span class="pl-pds">"</span></span>&gt;&lt;/<span
-                class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>grid<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box_list<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
 
     <span class="pl-c">&lt;!-- box not found, it is handled in not_found function. id="not_found" --&gt;</span>
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row not_found<span
-                class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>not_found<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row not_found<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>not_found<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
             &lt;<span class="pl-ent">h1</span>&gt;No products were found.&lt;/<span class="pl-ent">h1</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
     &lt;/<span class="pl-ent">div</span>&gt;
 
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row border-bottom<span
-                class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row border-bottom<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
 
             <span class="pl-c">&lt;!-- It shows the total records, name="_dsTotais" --&gt;</span>
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">name</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>_dsTotais<span class="pl-pds">"</span></span> <span
-                class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>total<span
-                class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsTotais<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>total<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-right<span
-                class="pl-pds">"</span></span>&gt;
-                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Sort by&lt;/<span
-                class="pl-ent">label</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-6<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-right<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Sort by&lt;/<span class="pl-ent">label</span>&gt;
 
                 <span class="pl-c">&lt;!-- select order, name="_dsOrder" --&gt;</span>
-                &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsOrder<span
-                class="pl-pds">"</span></span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;Select&lt;/<span
-                class="pl-ent">option</span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>ASC<span class="pl-pds">"</span></span>&gt;a-z&lt;/<span
-                class="pl-ent">option</span>&gt;
-                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>DESC<span class="pl-pds">"</span></span>&gt;z-a&lt;/<span
-                class="pl-ent">option</span>&gt;
+                &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsOrder<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;Select&lt;/<span class="pl-ent">option</span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>ASC<span class="pl-pds">"</span></span>&gt;a-z&lt;/<span class="pl-ent">option</span>&gt;
+                    &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>DESC<span class="pl-pds">"</span></span>&gt;z-a&lt;/<span class="pl-ent">option</span>&gt;
                 &lt;/<span class="pl-ent">select</span>&gt;
             &lt;/<span class="pl-ent">div</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
     &lt;/<span class="pl-ent">div</span>&gt;
 
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span
-                class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
-            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span
-                class="pl-pds">"</span></span>&gt;
-                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-4<span class="pl-pds">"</span></span>&gt;
-                    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-group pull-left<span class="pl-pds">"</span></span>&gt;
-                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Display&lt;/<span
-                class="pl-ent">label</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-12<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-4<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group pull-left<span class="pl-pds">"</span></span>&gt;
+                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;Display&lt;/<span class="pl-ent">label</span>&gt;
 
                         <span class="pl-c">&lt;!-- select records per page, name="_dsRecords" --&gt;</span>
-                        &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsRecords<span class="pl-pds">"</span></span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>9<span class="pl-pds">"</span></span>&gt;9&lt;/<span
-                class="pl-ent">option</span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>18<span class="pl-pds">"</span></span>&gt;18&lt;/<span
-                class="pl-ent">option</span>&gt;
-                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span
-                class="pl-s"><span class="pl-pds">"</span>27<span class="pl-pds">"</span></span>&gt;27&lt;/<span
-                class="pl-ent">option</span>&gt;
+                        &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsRecords<span class="pl-pds">"</span></span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>9<span class="pl-pds">"</span></span>&gt;9&lt;/<span class="pl-ent">option</span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>18<span class="pl-pds">"</span></span>&gt;18&lt;/<span class="pl-ent">option</span>&gt;
+                            &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s"><span class="pl-pds">"</span>27<span class="pl-pds">"</span></span>&gt;27&lt;/<span class="pl-ent">option</span>&gt;
                         &lt;/<span class="pl-ent">select</span>&gt;
-                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;per page&lt;/<span
-                class="pl-ent">label</span>&gt;
+                        &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>control-label<span class="pl-pds">"</span></span>&gt;per page&lt;/<span class="pl-ent">label</span>&gt;
                     &lt;/<span class="pl-ent">div</span>&gt;
                 &lt;/<span class="pl-ent">div</span>&gt;
-                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>col-md-8<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>col-md-8<span class="pl-pds">"</span></span>&gt;
 
                     <span class="pl-c">&lt;!-- ul pagination, name="_dsPagination" --&gt;</span>
-                    &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span
-                class="pl-pds">"</span>pagination pull-right<span class="pl-pds">"</span></span> <span
-                class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsPagination<span
-                class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">ul</span>&gt;
+                    &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pagination pull-right<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>_dsPagination<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">ul</span>&gt;
                 &lt;/<span class="pl-ent">div</span>&gt;
             &lt;/<span class="pl-ent">div</span>&gt;
         &lt;/<span class="pl-ent">div</span>&gt;
     &lt;/<span class="pl-ent">div</span>&gt;
-&lt;/<span class="pl-ent">div</span>&gt;</pre>
-    </div>
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
-    <p><strong>JavaScript</strong></p>
+<p><strong>JavaScript</strong></p>
 
-    <div class="highlight highlight-source-js"><pre><span class="pl-c">/*</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">/*</span>
 <span class="pl-c">  ====== Function contruct ======</span>
 <span class="pl-c">  Parameter "data" is returned from the back-end is a reference of the field array.</span>
 <span class="pl-c">*/</span>
-<span class="pl-k">var</span> <span class="pl-en">contruct_grid</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span
-                class="pl-smi">data</span>) {
+<span class="pl-k">var</span> <span class="pl-en">contruct_grid</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
     $(<span class="pl-s"><span class="pl-pds">'</span>#not_found<span class="pl-pds">'</span></span>).hide();
     $(<span class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>).show();
 
-    $(<span class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>).html(<span
-                class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>);
+    $(<span class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>).html(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>);
     <span class="pl-k">var</span> html <span class="pl-k">=</span> [];
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="row"&gt;<span
-                class="pl-pds">'</span></span>);
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span
-                class="pl-pds">'</span>&lt;div class="col-md-12"&gt;<span class="pl-pds">'</span></span>);
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="row"&gt;<span
-                class="pl-pds">'</span></span>);
-    $.each(data, <span class="pl-k">function</span> (<span class="pl-smi">index</span>, <span
-                class="pl-smi">value</span>) {
-        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="col-md-4 col-sm-6 col-xs-12 produto"&gt;<span
-                class="pl-pds">'</span></span>);
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="row"&gt;<span class="pl-pds">'</span></span>);
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="col-md-12"&gt;<span class="pl-pds">'</span></span>);
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="row"&gt;<span class="pl-pds">'</span></span>);
+    $.each(data, <span class="pl-k">function</span> (<span class="pl-smi">index</span>, <span class="pl-smi">value</span>) {
+        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="col-md-4 col-sm-6 col-xs-12 produto"&gt;<span class="pl-pds">'</span></span>);
 
-            html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;a href="javascript:;"&gt;<span
-                class="pl-pds">'</span></span>);
-                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="hover"&gt;<span
-                class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="img"&gt;<span
-                class="pl-pds">'</span></span>);
-                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;img src="http://php.developscript.com/jquery_dsdatatablegrid/img/<span
-                class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span class="pl-s"><span
-                class="pl-pds">'</span>id<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> <span
-                class="pl-s"><span class="pl-pds">'</span>.png" /&gt;<span class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span
-                class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="desc"&gt;<span
-                class="pl-pds">'</span></span>);
-                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span
-                class="pl-pds">'</span>&lt;h3&gt;<span class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span
-                class="pl-s"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>] <span
-                class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;/h3&gt;<span
-                class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span
-                class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="price"&gt;<span
-                class="pl-pds">'</span></span>);
-                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;h3&gt;$ <span
-                class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span class="pl-s"><span
-                class="pl-pds">'</span>price<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> <span
-                class="pl-s"><span class="pl-pds">'</span>&lt;/h3&gt;<span class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span
-                class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
-                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>);
-                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="link"&gt;<span
-                class="pl-pds">'</span></span>);
-                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;span class="btn btn-primary btn-ver"&gt;Ver&lt;/span&gt;<span
-                class="pl-pds">'</span></span>);
-                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>);
-            html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/a&gt;<span
-                class="pl-pds">'</span></span>);
+            html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;a href="javascript:;"&gt;<span class="pl-pds">'</span></span>);
+                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="hover"&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="img"&gt;<span class="pl-pds">'</span></span>);
+                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;img src="http://php.developscript.com/jquery_dsdatatablegrid/img/<span class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span class="pl-s"><span class="pl-pds">'</span>id<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>.png" /&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="desc"&gt;<span class="pl-pds">'</span></span>);
+                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;h3&gt;<span class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span class="pl-s"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;/h3&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="price"&gt;<span class="pl-pds">'</span></span>);
+                        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;h3&gt;$ <span class="pl-pds">'</span></span> <span class="pl-k">+</span> value[<span class="pl-s"><span class="pl-pds">'</span>price<span class="pl-pds">'</span></span>] <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;/h3&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;div class="link"&gt;<span class="pl-pds">'</span></span>);
+                    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;span class="btn btn-primary btn-ver"&gt;Ver&lt;/span&gt;<span class="pl-pds">'</span></span>);
+                html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+            html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/a&gt;<span class="pl-pds">'</span></span>);
 
-        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>)
+        html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>)
     });
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>);
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>);
-    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span
-                class="pl-pds">'</span></span>);
-    $(html.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>)).appendTo($(<span
-                class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>));
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+    html.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;/div&gt;<span class="pl-pds">'</span></span>);
+    $(html.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>)).appendTo($(<span class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>));
 };
 
 <span class="pl-c">/*</span>
 <span class="pl-c">    ====== Function not found records ======</span>
 <span class="pl-c">    parameter "data" is returned from the back-end makes reference to every request.</span>
 <span class="pl-c"> */</span>
-<span class="pl-k">var</span> <span class="pl-en">not_found</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span
-                class="pl-smi">data</span>) {
+<span class="pl-k">var</span> <span class="pl-en">not_found</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
     $(<span class="pl-s"><span class="pl-pds">'</span>#not_found<span class="pl-pds">'</span></span>).show();
     $(<span class="pl-s"><span class="pl-pds">'</span>#grid<span class="pl-pds">'</span></span>).hide();
 };
@@ -419,44 +276,36 @@
 <span class="pl-c">*/</span>
 $(<span class="pl-s"><span class="pl-pds">'</span>#list_grid<span class="pl-pds">'</span></span>).dsDataTable({
     ajax<span class="pl-k">:</span> {
-        url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>http://php.developscript.com/jquery_dsdatatablegrid/ajaxPDO.php<span
-                class="pl-pds">'</span></span>,
-        type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>POST<span
-                class="pl-pds">'</span></span>,
-        addData<span class="pl-k">:</span> {yourData<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>yourValue<span
-                class="pl-pds">'</span></span>}
+        url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>http://php.developscript.com/jquery_dsdatatablegrid/ajaxPDO.php<span class="pl-pds">'</span></span>,
+        type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>POST<span class="pl-pds">'</span></span>,
+        addData<span class="pl-k">:</span> {yourData<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>yourValue<span class="pl-pds">'</span></span>}
     },
     constructor<span class="pl-k">:</span> {
         found<span class="pl-k">:</span> contruct_grid,
         not_found<span class="pl-k">:</span> not_found
     }
-});</pre>
-    </div>
+});</pre></div>
 
-    <h2>
-        <a id="default-settings" class="anchor" href="#default-settings" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Default settings</h2>
+<h2>
+<a id="default-settings" class="anchor" href="#default-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default settings</h2>
 
-    <div class="highlight highlight-source-js"><pre>labelTotal<span class="pl-k">:</span> {
+<div class="highlight highlight-source-js"><pre>labelTotal<span class="pl-k">:</span> {
     active<span class="pl-k">:</span> <span class="pl-c1">true</span>,
-    showing<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Showing<span
-                class="pl-pds">'</span></span>,
+    showing<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Showing<span class="pl-pds">'</span></span>,
     to<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>to<span class="pl-pds">'</span></span>,
     of<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>of<span class="pl-pds">'</span></span>,
-    entries<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>entries<span
-                class="pl-pds">'</span></span>,
-    loading<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Loading...<span
-                class="pl-pds">'</span></span>,
-    filter<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Filter<span
-                class="pl-pds">'</span></span>,
-    values_in_total<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>values ​​in total<span
-                class="pl-pds">'</span></span>,
-    records_not_found<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Records not found.<span
-                class="pl-pds">'</span></span>
+    entries<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>entries<span class="pl-pds">'</span></span>,
+    loading<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Loading...<span class="pl-pds">'</span></span>,
+    filter<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Filter<span class="pl-pds">'</span></span>,
+    values_in_total<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>values ​​in total<span class="pl-pds">'</span></span>,
+    records_not_found<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Records not found.<span class="pl-pds">'</span></span>
 },
 search<span class="pl-k">:</span> {
     active<span class="pl-k">:</span> <span class="pl-c1">true</span>,
     autosearch<span class="pl-k">:</span> <span class="pl-c1">true</span>
+},
+urlParam<span class="pl-k">:</span> {
+    active<span class="pl-k">:</span> <span class="pl-c1">true</span>
 },
 recordsPage<span class="pl-k">:</span> {
     active<span class="pl-k">:</span> <span class="pl-c1">true</span>
@@ -468,98 +317,80 @@ order<span class="pl-k">:</span> {
     active<span class="pl-k">:</span> <span class="pl-c1">true</span>
 },
 _dsEmtName<span class="pl-k">:</span> {
-    records<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsRecords<span
-                class="pl-pds">'</span></span>,
-    pagination<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsPagination<span
-                class="pl-pds">'</span></span>,
-    search<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsSearch<span
-                class="pl-pds">'</span></span>,
-    totais<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsTotais<span
-                class="pl-pds">'</span></span>,
-    order<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsOrder<span
-                class="pl-pds">'</span></span>
-}</pre>
-    </div>
+    records<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsRecords<span class="pl-pds">'</span></span>,
+    pagination<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsPagination<span class="pl-pds">'</span></span>,
+    search<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsSearch<span class="pl-pds">'</span></span>,
+    totais<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsTotais<span class="pl-pds">'</span></span>,
+    order<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>_dsOrder<span class="pl-pds">'</span></span>,
+    urlPg<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>pg<span class="pl-pds">'</span></span>,
+    urlSc<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>search<span class="pl-pds">'</span></span>,
+    urlRd<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>records<span class="pl-pds">'</span></span>,
+    urlOr<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>order<span class="pl-pds">'</span></span>
+}</pre></div>
 
-    <h2>
-        <a id="all-settings" class="anchor" href="#all-settings" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>All settings</h2>
+<h2>
+<a id="all-settings" class="anchor" href="#all-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>All settings</h2>
 
-    <div class="highlight highlight-source-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#list_grid<span
-            class="pl-pds">'</span></span>).dsDataTable({
+<div class="highlight highlight-source-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>#list_grid<span class="pl-pds">'</span></span>).dsDataTable({
     labelTotal<span class="pl-k">:</span> {
-        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>,
-        showing<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
-        to<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>***<span
-                class="pl-pds">'</span></span>,
-        of<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>***<span
-                class="pl-pds">'</span></span>,
-        entries<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
-        loading<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>,
+        showing<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        to<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>***<span class="pl-pds">'</span></span>,
+        of<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>***<span class="pl-pds">'</span></span>,
+        entries<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        loading<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
         filter<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
-        values_in_total<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
-        records_not_found<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>
+        values_in_total<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        records_not_found<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>
     },
     search<span class="pl-k">:</span> {
-        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>,
-        autosearch<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>,
+        autosearch<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>
+    },
+    urlParam<span class="pl-k">:</span> {
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>
     },
     recordsPage<span class="pl-k">:</span> {
-        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>
     },
     pagination<span class="pl-k">:</span> {
-        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>
     },
     order<span class="pl-k">:</span> {
-        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span
-                class="pl-c1">false</span>
+        active<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-k">||</span> <span class="pl-c1">false</span>
     },
     _dsEmtName<span class="pl-k">:</span> {
-        records<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
-        pagination<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
+        records<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        pagination<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
         search<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
         totais<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
-        order<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>
+        order<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        urlPg<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        urlSc<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        urlRd<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        urlOr<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>
     },
     <span class="pl-c">// ==== required ====</span>
     ajax<span class="pl-k">:</span> {
-        url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span
-                class="pl-pds">'</span></span>,
-        type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>POST||GET|| ...<span
-                class="pl-pds">'</span></span>,
-        addData<span class="pl-k">:</span> {yourData<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>yourValue<span
-                class="pl-pds">'</span></span>} <span class="pl-c">// ==== optional ====</span>
+        url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>*********<span class="pl-pds">'</span></span>,
+        type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>POST||GET|| ...<span class="pl-pds">'</span></span>,
+        addData<span class="pl-k">:</span> {yourData<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>yourValue<span class="pl-pds">'</span></span>} <span class="pl-c">// ==== optional ====</span>
     },
     <span class="pl-c">// ==== required ====</span>
     constructor<span class="pl-k">:</span> {
         found<span class="pl-k">:</span> contruct_grid,
         not_found<span class="pl-k">:</span> not_found <span class="pl-c">// ==== optional ====</span>
     }
-});</pre>
-    </div>
+});</pre></div>
 
-    <h2>
-        <a id="back-end" class="anchor" href="#back-end" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Back-End</h2>
+<h2>
+<a id="back-end" class="anchor" href="#back-end" aria-hidden="true"><span class="octicon octicon-link"></span></a>Back-End``</h2>
 
-    <ul>
-        <li>Get</li>
-    </ul>
+<ul>
+<li>Get</li>
+</ul>
 
-    <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">/* </span></span>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">/* </span></span>
 <span class="pl-s1"><span class="pl-c">* ====== Example in PHP. ======</span></span>
 <span class="pl-s1"><span class="pl-c">* === Sample file ajaxPDO.php. ===</span></span>
 <span class="pl-s1"><span class="pl-c">*</span></span>
@@ -567,14 +398,13 @@ _dsEmtName<span class="pl-k">:</span> {
 <span class="pl-s1"><span class="pl-c">* ['dsSearch']         =&gt; String to input search.</span></span>
 <span class="pl-s1"><span class="pl-c">* ['dsPageNow']        =&gt; Current page.</span></span>
 <span class="pl-s1"><span class="pl-c">* ['dsOrder']          =&gt; Order of the columns.</span></span>
-<span class="pl-s1"><span class="pl-c">*/</span></span></pre>
-    </div>
+<span class="pl-s1"><span class="pl-c">*/</span></span></pre></div>
 
-    <ul>
-        <li>Returns</li>
-    </ul>
+<ul>
+<li>Returns</li>
+</ul>
 
-    <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">/* </span></span>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c">/* </span></span>
 <span class="pl-s1"><span class="pl-c">* ====== Example in PHP. ======</span></span>
 <span class="pl-s1"><span class="pl-c">* === Sample file ajaxPDO.php. ===</span></span>
 <span class="pl-s1"><span class="pl-c">*</span></span>
@@ -584,20 +414,18 @@ _dsEmtName<span class="pl-k">:</span> {
 <span class="pl-s1"><span class="pl-c">* $return['fields'][]    =&gt; Fields that are sent to construct function.</span></span>
 <span class="pl-s1"><span class="pl-c">* $return['start']       =&gt; Start to limit.</span></span>
 <span class="pl-s1"><span class="pl-c">* $return['end']         =&gt; End to limit = $start_from + $fields-&gt;rowCount().</span></span>
-<span class="pl-s1"><span class="pl-c">*/</span></span></pre>
-    </div>
+<span class="pl-s1"><span class="pl-c">*/</span></span></pre></div>
 
-    <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/developscript/jQuery_dsDataTableGrid">jQuery_dsDataTableGrid</a> is maintained by <a
-                href="https://github.com/developscript">developscript</a>.</span>
+<pre><code></code></pre>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
-                href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a
-                href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-    </footer>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/developscript/jQuery_dsDataTableGrid">jQuery_dsDataTableGrid</a> is maintained by <a href="https://github.com/developscript">developscript</a>.</span>
 
-</section>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
+    </section>
 
-</body>
+  
+  </body>
 </html>
