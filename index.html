@@ -234,6 +234,9 @@
                     active: true,
                     autosearch: true
                 },
+                urlParam: {
+                   active: true
+                },
                 recordsPage: {
                     active: true
                 },
@@ -248,7 +251,11 @@
                     pagination: '_dsPagination',
                     search: '_dsSearch',
                     totais: '_dsTotais',
-                    order: '_dsOrder'
+                    order: '_dsOrder',
+                    urlPg: 'pg',
+                    urlSc: 'search',
+                    urlRd: 'records',
+                    urlOr: 'order'
                 }
 
 
@@ -269,6 +276,9 @@
                         active: true || false,
                         autosearch: true || false
                     },
+                    urlParam: {
+                        active: true || false
+                    },
                     recordsPage: {
                         active: true || false
                     },
@@ -283,7 +293,11 @@
                         pagination: '*********',
                         search: '*********',
                         totais: '*********',
-                        order: '*********'
+                        order: '*********',
+                        urlPg: '*********',
+                        urlSc: '*********',
+                        urlRd: '*********',
+                        urlOr: '*********'
                     },
                     // ==== required ====
                     ajax: {

@@ -15,7 +15,10 @@ _dsDataTableGrid is a plugin for [jQuery](//jquery.com) that works with AJAX req
   
 * Pagination, Configuration:
   * Enable or disable
-  
+
+* Parameters url, Configuration:
+  * Enable or disable
+
 * Ordering, Configuration:
   * Enable or disable
   
@@ -250,6 +253,9 @@ search: {
     active: true,
     autosearch: true
 },
+urlParam: {
+    active: true
+},
 recordsPage: {
     active: true
 },
@@ -264,7 +270,11 @@ _dsEmtName: {
     pagination: '_dsPagination',
     search: '_dsSearch',
     totais: '_dsTotais',
-    order: '_dsOrder'
+    order: '_dsOrder',
+    urlPg: 'pg',
+    urlSc: 'search',
+    urlRd: 'records',
+    urlOr: 'order'
 }
 ```
 
@@ -287,6 +297,9 @@ $('#list_grid').dsDataTable({
         active: true || false,
         autosearch: true || false
     },
+    urlParam: {
+        active: true || false
+    },
     recordsPage: {
         active: true || false
     },
@@ -301,7 +314,11 @@ $('#list_grid').dsDataTable({
         pagination: '*********',
         search: '*********',
         totais: '*********',
-        order: '*********'
+        order: '*********',
+        urlPg: '*********',
+        urlSc: '*********',
+        urlRd: '*********',
+        urlOr: '*********'
     },
     // ==== required ====
     ajax: {
