@@ -1,12 +1,12 @@
 <!--
  *
- * DevelopScript - DataTableGrid v0.6.5 (http://developscript.com)
+ * DevelopScript - DataTableGrid v0.7.0 (http://developscript.com)
  *
  * Licensed under the MIT license.
  *
  * @file    index.html
  * @author  Rafael Pegorari
- * @date    29/09/2015
+ * @date    15/10/2015
  *
  * ====== Required ======
  * This code was developed based on jQuery v2.1.4.
@@ -227,91 +227,6 @@
         };
 
         $(function () {
-
-            /*
-             ====== Default setting ======
-             labelTotal: {
-             active: true,
-             showing: 'Showing',
-             to: 'to',
-             of: 'of',
-             entries: 'entries',
-             loading: 'Loading...',
-             filter: 'Filter',
-             values_in_total: 'values ​​in total',
-             records_not_found: 'Records not found.'
-             },
-             search: {
-             active: true,
-             autosearch: true
-             },
-             recordsPage: {
-             active: true
-             },
-             pagination: {
-             active: true
-             },
-             order: {
-             active: true
-             },
-             _dsEmtName: {
-             records: '_dsRecords',
-             pagination: '_dsPagination',
-             search: '_dsSearch',
-             totais: '_dsTotais',
-             order: '_dsOrder'
-             }
-
-
-             ====== All settings ======
-             $('#list_grid').dsDataTable({
-             labelTotal: {
-             active: true || false,
-             showing: '*********',
-             to: '***',
-             of: '***',
-             entries: '*********',
-             loading: '*********',
-             filter: '*********',
-             values_in_total: '*********',
-             records_not_found: '*********'
-             },
-             search: {
-             active: true || false,
-             autosearch: true || false
-             },
-             recordsPage: {
-             active: true || false
-             },
-             pagination: {
-             active: true || false
-             },
-             order: {
-             active: true || false
-             },
-             _dsEmtName: {
-             records: '*********',
-             pagination: '*********',
-             search: '*********',
-             totais: '*********',
-             order: '*********'
-             },
-             // ==== required ====
-             ajax: {
-             url: '*********',
-             type: 'POST||GET|| ...',
-             addData: {yourData: 'yourValue'} // ==== optional ====
-             },
-             // ==== required ====
-             constructor: {
-             found: contruct_grid,
-             not_found: not_found // ==== optional ====
-             }
-             });
-             */
-            /*
-             ====== Call the plugin ======
-             */
             $('#list_grid').dsDataTable({
                 ajax: {
                     url: 'http://php.developscript.com/jquery_dsdatatablegrid/ajaxPDO.php',
