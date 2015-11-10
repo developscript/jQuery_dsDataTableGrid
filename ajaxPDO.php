@@ -9,7 +9,8 @@
  * @file            ajaxPDO.php
  * @author          Rafael Pegorari
  * @date            29/09/2015
- * 
+ *
+ * @edit            09/11/2015 - comment, SQL Injection.
  * 
  * ====== Get ======
  * ['dsRecordPages']    => Amounts of records per page.
@@ -37,6 +38,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //====== ARRAY RETURN ======
     $return = array();
+    $parameters = array();
 
     //====== SELECT ======
     $select = "SELECT * FROM products ";
@@ -44,22 +46,31 @@ try {
     //====== WHERE ======
     $where = '';
     if (isset($_POST['dsSearch']) && $_POST['dsSearch'] != '') {
-        $where .= " WHERE name LIKE '%" . $_POST['dsSearch'] . "%' ";
+        $parameters[] = "%" . $_POST['dsSearch'] . "%";
+        $where .= " WHERE name LIKE ? ";
     }
 
     //====== LIMIT ======
     $start_from = ($_POST['dsPageNow'] - 1) * $_POST['dsRecordPages'];
-    $limit = " LIMIT " . $start_from . ", " . $_POST['dsRecordPages'];
+    $limit = " LIMIT " . intval($start_from) . ", " . intval($_POST['dsRecordPages']);
 
     //====== ORDER ======
     $order = '';
     if (isset($_POST['dsOrder']) && $_POST['dsOrder'] != '') {
-        $order = " ORDER BY name " . $_POST['dsOrder'] . " ";
+        if ((strtolower($_POST['dsOrder']) === 'asc' || strtolower($_POST['dsOrder']) === 'desc')) {
+            $order = " ORDER BY name " . $_POST['dsOrder'] . " ";
+        }
     }
 
     //====== TOTAL PG ======
-    $total_rows = $conn->query($select)->rowCount();
-    $total_rows_query = $conn->query($select . $where)->rowCount();
+    $total_rows_sql = $conn->prepare($select);
+    $total_rows_sql->execute();
+    $total_rows = count($total_rows_sql->fetchAll());
+
+    $total_rows_query_sql = $conn->prepare($select . $where);
+    $total_rows_query_sql->execute($parameters);
+    $total_rows_query = count($total_rows_query_sql->fetchAll());
+
     $total_pages = ceil($total_rows_query / $_POST['dsRecordPages']);
 
     $return['total_rows'] = $total_rows;
@@ -69,12 +80,15 @@ try {
 
     //====== FIELDS ======
     if ($total_rows_query != 0) {
-        $fields = $conn->query($select . $where . $order . $limit);
-        foreach ($fields->fetchAll(\PDO :: FETCH_ASSOC) as $key => $value) {
+        $fields = $conn->prepare($select . $where . $order . $limit);
+        $fields->execute($parameters);
+        $fields_rows = $fields->fetchAll(\PDO :: FETCH_ASSOC);
+
+        foreach ($fields_rows as $key => $value) {
             $return['fields'][$key] = array_map('utf8_encode', $value);
         }
         $return['start'] = $start_from;
-        $return['end'] = $start_from + $fields->rowCount();
+        $return['end'] = $start_from + count($fields_rows);
     }
 
     echo json_encode($return);
