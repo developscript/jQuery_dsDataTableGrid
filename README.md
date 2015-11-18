@@ -1,6 +1,6 @@
 # jQuery_dsDataTableGrid
 
-_dsDataTableGrid is a plugin for [jQuery](//jquery.com) that works with AJAX requests. With some setting you build a dynamic grid, ideal for catalog products.
+_dsDataTableGrid is a plugin for [jQuery](//jquery.com) that works with AJAX requests. With some settings you build a dynamic grid, ideal for catalog products.
 
 ### [Example...](http://developscript.github.io/jQuery_dsDataTableGrid/exemple.html)
 
