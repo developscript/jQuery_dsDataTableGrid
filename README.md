@@ -4,7 +4,7 @@ _dsDataTableGrid is a plugin for [jQuery](//jquery.com) that works with AJAX req
 
 ### [Example...](http://developscript.github.io/jQuery_dsDataTableGrid/exemple.html)
 
-## Having support
+## has support for
 
 * Search, configuration:
   * Enable or disable
@@ -29,7 +29,7 @@ _dsDataTableGrid is a plugin for [jQuery](//jquery.com) that works with AJAX req
   * Filter text
 
 ## Installation
-The installation is to add javascripts, jQuery and dsDatatableGrid.
+The install steps are simple, you just need to add some js files like jQuery and dsDatatableGrid.
 The plugin was developed based on version of jQuery-2.1.4.
 
 **Scripts JavaScript**
